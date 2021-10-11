@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio 2.0</title>
+          <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <script src="https://kit.fontawesome.com/83022883e4.js" crossorigin="anonymous"></script>
+          
+        <style>
+          body{
+     background-image:url("https://i.ibb.co/MGSHxkR/abstract-art-black-background-blur-1040499.jpg");
+     background-repeat:no-repeat;
+    margin:20px 20px 0px 20px;
+    background-size:100% 100px;
+    background-attachment:contain;
+    background-color:rgba(0,0,0,0.8);    
+    
+}
+
+
+h1{font-size:2em;}
+h2{font-size:1.5em;}
+
+@media all and (max-width:500px){
+    body{margin:0;}
+    h1{font-size:1.5em;}
+    h2{font-size:1.17em;}
+}
+
+/*Header*/
+
+
+header{        
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr ;
+    grid-gap:10px;
+    text-align:center;
+    grid-auto-rows:minmax(30px,auto);
+    font-size:40px;
+    font-family:times;
+    margin:0px 10px 25px 10px;
+    
+    
+}
+
+.my{
+    background-color:transparent;
+    color:transparent;
+    animation-name:invisible;
+    animation-delay:2s;
+    animation-timing-function:linear;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    border-radius:10px;
+}
+
+.portfolio{
+    background-image:url("https://i.ibb.co/hm4ktk6/IMG-20200705-225544.jpg ");
+    background-size:100% 100%;
+    color:white;
+      animation-name:rotate;
+    animation-delay:2s;
+    animation-timing-function:linear;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    transform:rotateX(180deg);
+    box-shadow: -1px -2px 3px rgba(0,0,0,0.8);
+    grid-column:2;
+    grid-row:1;
+    z-index:1;
+    border-radius:10px;
+
+}
+
+.welcome{
+    animation-name:rot;
+    animation-delay:2s;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    color:white;
+    grid-column:2;
+    grid-row:1;    
+    z-index:2;
+    background-color:black;
+    border-radius:10px;
+}
+
+
+
+.ym{
+    background-color:transparent;
+    color:transparent;
+      animation-name:invisible;
+    animation-delay:2s;
+    animation-timing-function:linear;
+    animation-duration:2s;
+    animation-fill-mode:forwards;  
+    border-radius:10px;
+}
+
+
+
+@keyframes rotate{
+    0%{transform:rotateX(180deg);
+    z-index:1;
+    box-shadow: -1px -2px 3px rgba(0,0,0,0.8);}
+    100%{transform:rotateX(0deg);
+    z-index:2;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);}
+}
+
+
+@keyframes invisible{
+    0%{color:black;
+    }
+    100%{color:white;
+    background-color:black;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);}
+    }
+
+
+@keyframes rot{
+    0%{transform:rotateX(0deg);
+    z-index:2;}
+    100%{transform:rotateX(180deg);
+    z-index:1;}
+}
+
+@media all and (max-width:500px){
+
+    body{
+          background-size:100% 160px;
+    }
+    header{grid-template-columns:1fr;
+    margin:0px 50px 40px 50px;
+    font-size:25px;
+    }
+    .portfolio{
+        grid-column:1;
+        grid-row:2;
+        
+    }
+    .welcome{
+        grid-column:1;
+        grid-row:2;
+    }
+}
+
+
+
+
+
+
+
+/*nav*/
+
+
+
+nav{margin:20px 20px 12px 20px;
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-gap:10px;
+    height:30px;
+    width:8%;      
+    overflow:hidden;  
+    transition:all 4s;
+    
+    
+}
+
+#menu
+   {cursor:pointer;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    background-color:black;
+    border-left:5px solid red;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+    font-size:20px;
+    padding-top:3px; 
+    transition:all 4s;       
+    
+}
+
+.na{cursor:pointer;
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    background-color:darkgray;
+    border-left:3px solid black;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+    font-size:20px;
+    padding-top:3px; 
+    }
+        
+@media all and (max-width:500px){
+     nav{
+     grid-template-columns:1fr;
+     text-align:center;
+     width:90%;
+     height:30px;
+     transition:all 4s;
+     }
+     
+}
+
+
+
+
+
+/*intro*/
+
+
+
+
+section{
+    margin:0 10px 0 10px;
+    display:grid; 
+    grid-template-columns:2fr 1fr;  
+    grid-gap:10px; 
+    grid-auto-rows:300px;
+     
+
+}
+
+#intro{
+background-image:url("https://i.ibb.co/Qpvp5sj/IMG-20200627-184844.jpg ");
+    background-size:100%;
+    border-radius:10px;
+    display:grid;
+    grid-template-columns:1fr 1fr;      
+    align-items:center;
+    text-align:center ; 
+    box-shadow:0px 2px 3px rgba(0,255,225,0.5);
+    } 
+
+
+.mypic>img{ 
+    
+  width:50%;      
+  border-radius:10px;
+  box-shadow:1px 2px 3px rgba(0,0,0,0.8);
+  border-left:solid 3px rgb(0,255,225);
+  border-top:solid 3px rgb(0,255,225); 
+}
+
+.pic{
+ filter:grayscale(50%);   
+}
+
+.dev{
+  background:linear-gradient(90deg, cyan,#91ffde,#ff9191,#fc385f,#38fcbb,#00bbff,cyan);
+ background-clip:text;
+ -webkit-background-clip:text;
+  color:transparent;
+  font-family:cursive;
+  background-size:500%; 
+    position:relative;
+    animation:bu 14s linear infinite ;
+    font-size:20px;
+}
+    
+@keyframes bu{
+    0%{background-position:0%;}
+    100%{background-position:500%;}
+}
+
+.name{
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);
+    color:white;
+    font-family:times;
+    font-size:25px;
+}
+ .about>h1{
+     font-family:times;
+ }
+.about{
+   text-shadow:1px 2px 3px rgba(0,0,0,0.8);     background-image:url("https://i.ibb.co/Qpvp5sj/IMG-20200627-184844.jpg ");
+    background-size:100% 100%;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:15px;
+    text-align:center;
+    font-family:times new roman;
+    color:white;
+    border-radius:10px;
+    box-shadow:0px 2px 3px rgba(0,255,225,0.5);
+}
+
+
+@media all and (max-width:500px){
+   
+   section{grid-template-columns:1fr;
+       
+       grid-auto-rows:230px;
+   } 
+   .name{
+       font-size:20px;
+   }
+   
+}
+
+
+
+/*Skills*/
+
+
+.me{
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);
+    margin:10px 10px 0 10px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    grid-gap:10px;
+}
+
+
+.skills{
+    color:white;
+    font-family:times;   background-image:url("https://i.ibb.co/jRGj9vq/863062957a9d0e0aae892cbeb2935928.jpg");
+    background-size:100%;
+    text-align:center;
+    padding:10px;
+    border-radius:10px;
+    box-shadow: 0px 2px 3px rgba(150,0,255,0.5);
+}
+
+
+
+progress {
+width: 50%;
+height: 20px;
+border-radius:50px;
+box-shadow: 0 2px 5px rgba(150, 0, 225,0.5 )
+
+}
+progress::-webkit-progress-bar {
+background: #212121;
+border-radius:50px;
+}
+progress::-webkit-progress-value {
+background: rgba(0,100,255,0.5);
+border-radius:50px;
+} 
+
+
+.black{
+    cursor:pointer;
+    color:white;
+    font-family:times;   background-image:url("https://i.ibb.co/jRGj9vq/863062957a9d0e0aae892cbeb2935928.jpg");
+    background-size:100%;
+    text-align:center;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:40%;
+    border-radius:10px;
+    box-shadow: 0px 2px 3px rgba(150,0,255,0.5);
+    grid-column:2;
+    grid-row:1; 
+    z-index:2;
+    transition-property:transform,z-index,box-shadow;
+    transition-duration:1s;    
+}
+
+.black:hover{
+    transform:rotateY(180deg);
+    z-index:1;
+    box-shadow:none;
+}
+
+
+.bl{cursor:pointer;
+    padding:4px;
+    font-family:times;
+    z-index:1;
+    grid-column:2;
+    color:white;
+    grid-row:1; 
+    background-color:black;   
+    background-size:100%;
+    border-radius:10px;
+    box-shadow: 0px 2px 3px rgba(150,0,255,0.5);
+    transition-property:transform,z-index;
+    transition-duration:1s;
+    background-position:0% 60%;
+      
+}
+
+.bl:hover{   
+    z-index:2;
+}
+
+.click{
+    animation-name:color;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+}
+
+@keyframes color{
+    0%{color:white;}
+    20%{color:rgb(0,255,225);}
+    40%{color:rgb(150,0,255);}
+    60%{color:red;}
+    80%{color:green;}
+}
+
+
+/*hobby*/
+
+
+.hobby{background-image:url("https://i.ibb.co/6y8Hzm1/094c438d7f647de81a24621e406c6de1.jpg");
+    background-size:100% 100%;
+    margin:20px 10px 0 10px;    
+    display:grid;
+    grid-gap:0px;
+    grid-template-columns:1fr 1fr 1fr;
+    border-radius:10px;
+    grid-template-areas:
+    'h h h'
+    'a a d'
+    'b b d'
+    'e c c'
+    'e c c'
+    'e f f';
+    box-shadow:0px 2px 3px rgba(255,0,0,0.6);
+    
+}
+
+
+.hobby h1{
+    grid-area:h;
+    text-align:center;
+    color:white;
+    font-family:times;
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);
+    
+}
+
+.hobby img{
+    border-radius:10px;
+    width:100%;
+}
+
+.sleep{
+    grid-area:a;
+    transition:transform 0.7s;
+    
+}
+
+.sleep:hover{
+    transform:rotateX(180deg);
+}
+
+.cod{
+    grid-area:b; 
+    position:relative ;   
+    top:-4px; 
+    transition:transform 0.5s;   
+}
+
+.cod:hover{
+    transform:scale(0.8);
+}
+
+.tea{
+    grid-area:d; 
+    transition:transform 0.7s;
+}
+.tea:hover{
+    transform:rotateY(180deg);
+}
+
+.pubg{
+    grid-area:c;
+    position:relative;
+    top:-9px;
+    transition:all 0.5s;
+    z-index:10;
+}
+
+.pubg:hover{
+    transform:scale(1.1);
+    z-index:25;
+}
+
+
+.learning{
+    grid-area:e;
+    position:relative;
+    top:-8px;    background-image:url("https://i.ibb.co/qk3qKWW/ea1051cae6fc1ef3610b467f26627b6b.jpg ");
+    background-size:100%;
+    text-align:center;
+    font-family:times;
+    padding-top:30px;
+    font-size:30px;
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);    
+    color:white;   
+    border-radius:10px;               transition:background 1s;
+    box-shadow:0px 2px 3px rgba(255,0,0,0.6);
+}
+
+.learning:hover{
+   background-image:url(" https://i.ibb.co/7tdFymv/pexels-media-1907785.jpg  "); 
+}
+
+.hb{text-align:center;
+    grid-area:f;
+    color:white;
+    font-family:times;
+    padding-top:30px;
+    font-size:30px;
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);    background-image:url("https://i.ibb.co/hm4ktk6/IMG-20200705-225544.jpg");
+    background-size:contain;
+    border-radius:10px;
+    height:115px;
+    position:relative;
+    top:-13px;
+    transition:background 1s;
+    box-shadow:0px 2px 3px rgba(255,0,0,0.6);
+    z-index:20;
+}
+
+.hb:hover{
+    background-image:url("https://i.ibb.co/NVCjTwT/IMG-20200627-180126.jpg ");
+    background-size:100%;
+    background-repeat:no-repeat ;
+}
+
+
+@media all and (max-width:500px)
+{
+    .hb{font-size:15px;
+    height:50px;
+    padding-top:20px;}
+    
+    .learning{
+        font-size:20px;
+    }
+}
+
+
+/*Project*/
+
+
+
+.cb{display:grid;
+    grid-template-columns:1fr;
+    grid-auto-rows:250px;
+    justify-items:center;
+background-image:url("https://i.ibb.co/NmS6Q4d/IMG-20200706-225230.jpg");
+    margin-top:20px;  
+    margin-left:10px; 
+    margin-right:10px;         
+    background-size:100%;
+    box-shadow:0px 2px 3px rgba(255,0,0,0.6); 
+    border-radius:10px;  
+}
+
+
+
+.hy{ box-shadow: 0px 2px 3px rgba(150,0,255,0.5); 
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align:center;
+    margin-left:10px;
+    margin-right:10px;
+    color:white;
+    font-family:times;
+    text-shadow:1px 2px 3px rgba(0,0,0,0.8);
+    border-radius:10px;     background-image:url("https://i.ibb.co/jRGj9vq/863062957a9d0e0aae892cbeb2935928.jpg");
+    background-size:100%;}
+    
+  h2{
+      text-align:center;
+  }
+    
+    .pro{
+     color:white; 
+     font-family:times;
+     text-shadow:1px 2px 3px rgba(0,0,0,0.8);
+     border-radius:10px;
+     box-shadow:0px 2px 3px rgba(255,0,0,0.5);  background-image:url("https://i.ibb.co/NmS6Q4d/IMG-20200706-225230.jpg");     
+     background-size:100%;
+     padding:5px;
+    }
+
+ .project { 
+      text-align:center;
+      width:100px;
+      height:100px;    
+      position:relative;
+      top:60px; 
+      background-color:rgba(255,0,0,0.2);  
+      border-style:solid; 
+      border-color:white;       
+      animation:bg 40s ;
+      animation-timing-function:linear;
+      animation-iteration-count:infinite;
+}
+
+@keyframes bg{
+    0%{background-color:rgba(255,0,0,0.2);}
+    15%{background-color:rgba(0,255,255,0.2);}
+    30%{background-color:rgba(0,0,0,0.4);}
+    45%{background-color:rgba(255,255,255,0.4);}
+    60%{background-color:transparent;}
+    75%{background-color:rgba(0,150,255,0.3);}
+    100%{background-color:rgba(255,0,0,0.2);}
+}
+
+.two{
+    transform:rotateY(180deg) translateY(-102px)
+translateZ(100px);}
+
+
+.three{
+    transform:rotateY(-90deg) translate(-50px,-204px) translateZ(50px);
+}
+
+
+.four{
+    transform:rotateY(90deg)  translate(50px,-306px) translateZ(50px);
+}
+
+.five{
+    transform: translateY(-458px) translateZ(-50px) rotateX(90deg);
+}
+
+.six{transform:translateY(-460px) translateZ(-50px) rotateX(-90deg);
+}
+
+.cube{
+    transform-style:preserve-3d; 
+    animation-name:move;
+    animation-duration:10s;
+    animation-iteration-count:infinite ;
+    animation-delay:0.1s;      animation-timing-function:linear;
+     transform-origin:50px 110px -50px;
+}
+
+@keyframes move {
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+    }
+}
+
+
+.cb img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+ .tsod{
+   text-align:center;
+   height:400px; 
+   margin-left:10px;
+   margin-right:10px;
+   border-radius:10px; background-image:url("https://i.ibb.co/NmS6Q4d/IMG-20200706-225230.jpg");
+   background-size:100%;
+   overflow:scroll;
+   box-shadow:0px 2px 3px rgba(255,0,0,0.5);    
+ }
+.tsod img{
+    width:80%;
+    border-radius:10px;
+            
+}
+
+@media all and (max-width:500px){
+    .cb{background-image:url("https://i.ibb.co/7ytkMbw/094c438d7f647de81a24621e406c6de1.jpg ");}
+}
+
+
+
+/*Social media*/
+
+
+.links{
+    
+    margin:20px 10px 0px 10px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap:10px;
+    
+        
+}
+
+.links div{
+    width:100%;
+    height:70px;
+    background-color:white;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:1px 2px 3px rgba(0,0,0,0.8);  
+    position:relative; 
+    overflow:hidden;    
+}
+
+
+.links div::before{
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:rgba(55,225,207,0.5);
+    color:white;
+    position:absolute;
+    transition:all 0.5s;
+    transition-timing-function:cubic-bezier(0.90, 1.3, 0, 1.3);
+    z-index:5;
+    
+}
+
+.ig::before{
+    top:-100%;
+    
+}
+
+.fb::before{
+   left:-100%; 
+}
+
+.youtube::before{
+    left:100%;
+}
+
+.pin::before{
+    top:100%;
+}
+
+    .links div:hover::before{
+    top:0%;
+    left:0%;
+}
+
+.link{
+    font-size:60px;
+}
+
+
+a{  cursor:pointer;
+    text-decoration:none;
+    color:black;
+}
+
+
+.adn{
+    margin-top:20px;
+    font-family:times;
+    text-align:center;
+    font-size:40px; 
+    background-color:lawngreen; 
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    box-shadow:0px 0px 50px lawngreen;
+    animation:neon 20s infinite;
+    animation-timing-function:linear;    
+}
+
+
+@keyframes neon{
+    0%{transform:rotateZ(0deg);}
+    10%{transform:rotateZ(90deg);
+    box-shadow:0px 0px 50px rgb(0,150,255);
+    background-color:rgb(0,150,255);}
+    20%{transform:rotateZ(180deg);}
+    30%{transform:rotateZ(360deg);
+    box-shadow:0px 0px 50px deepskyblue;
+    background-color:deepskyblue;}
+    40%{transform:rotateZ(720deg);}
+    50%{transform:rotateZ(1440deg);
+      box-shadow:0px 0px 50px cyan;
+      background-color:cyan;}
+    60%{transform:rotateZ(1800deg);}
+    70%{transform:rotateZ(2520deg);
+      box-shadow:0px 0px 50px rgb(148,0,255);
+      background-color:rgb(148,0,211);}
+    80%{transform:rotateZ(3240deg);}
+    90%{transform:rotateZ(3960deg);}
+    100%{transform:rotateZ(4680deg);}
+}
+
+.an{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    place-items:center;
+}
+
+
+
+/*footer*/
+
+footer{background-image:url("https://i.ibb.co/MGSHxkR/abstract-art-black-background-blur-1040499.jpg");
+    background-size:100%;
+    margin:20px 0 0 0;
+    padding:10px 30px 10px 30px;
+    text-align:center;
+}
+
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    'v m'
+    'z m';
+    grid-gap:10px;            
+}
+
+textarea{
+    grid-area:m;
+    
+}
+
+input,textarea{
+    box-shadow:1px 2px 3px black;
+    border:0;
+    border-radius:10px;
+}
+
+
+button{cursor:pointer;
+    position:relative;
+    border-radius:30px;
+    box-shadow:1px 2px 3px rgba(0,0,0,0.8);
+    width:100px;
+    height:40px;
+    margin-top:20px;
+    border:0;
+    background:linear-gradient(90deg, cyan,#91ffde,#ff9191,#fc385f,#38fcbb,#00bbff,cyan);
+    background-size:500%;
+    animation:button 14s linear infinite ;
+}
+    
+@keyframes button{
+    0%{background-position:0%;}
+    100%{background-position:500%;}
+}
+
+
+button::before{
+    content:"";
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    left:-10px;
+    bottom:-10px;        background:linear-gradient(90deg, cyan,#91ffde,#ff9191,#fc385f,#38fcbb,#00bbff,cyan);
+    background-size:500%;
+    filter:blur(30px);
+    border-radius:40px;
+    animation:gh 14s linear infinite;
+    
+}
+
+@keyframes gh{
+     0%{background-position:0%;}
+    100%{background-position:500%;}
+}
+
+
+.right{
+    margin:0;
+    background-color:black;
+    text-align:center;
+    color:white;
+    font-family:times;
+    height:70px;
+   clip-path:polygon(0 0, 100% 0,50% 70%);  
+    
+}
+
+.ff{
+    margin:0;
+    background-color:white;
+}  
+        </style>  
+          
+          
+    </head>
+    <body>
+    
+    <!--header-->
+    
+    <header>
+        <div class="my">My</div>        
+        <div class="portfolio">Portfolio</div>
+        <div class="ym">2.0</div>
+        <div class="welcome">Welcome</div>
+    </header>
+    <!--nav-->
+    
+    <nav id="nbar">
+        <div href="#" id="menu" onclick="op()"><i class="fa fa-bars" aria-hidden="true"></i> Menu</div>
+        <a href="#intro" class="na"><i class="fa fa-user" aria-hidden="true"></i> Intro</a>
+        <a href="#klo" class="na"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Skills</a>   
+        <a href="#bio" class="na"><i class="fa fa-address-card" aria-hidden="true"></i> Contact</a>
+        <div onclick="cl()" class="na"><i class="fa fa-backward" aria-hidden="true" ></i> Back</div>
+             
+    </nav>
+    
+    <!--intro-->
+    <section>
+        <div id="intro">
+          <div class="mypic"><img class="pic" src="https://i.ibb.co/fH9vX2J/IMG-20200404-193740.jpg" ></div>
+         <div><p class="name">Adnan ur </br>Rehman</p>
+             <p class="dev">-developer to be</p>
+         </div> 
+        </div>
+        <div class="about">
+        <h1>About me-</h1>
+        Hello! I am Adnan.I am a student of
+Computer Science Engineering from
+Bhopal city of MP state of India.I am not a professional but i have done my best in making this
+project. Leave an upvote.</div>
+    </section>
+    
+    <!--Skills-->
+     <div class="me">
+      <div id="klo" class="skills">
+      <h1>Skills-</h1>
+      <pre>Html: <progress min="0" max="100" value="90"></progress></br></br>CSS:  <progress min="0" max="100" value="90"></progress></br></br>C++:  <progress min="0" max="100" value="50"></progress></br></br>JS:   <progress min="0" max="100" value="80"></progress>
+       </pre>
+    </div>
+    <div class="black">
+    My projects list.</br></br>
+   <span class="click">Click here.</span>  
+    </div>
+   <div class="bl">
+       1.Portfolio 1.0</br>
+       2.Calculator</br>
+       3.Quadratic calculator</br>
+       4.3d dice</br>
+       5.Analog clock</br>
+       6.Matrix Adder</br>
+       7.Instagram frontend</br>
+       And a lot more.
+   </div> 
+    </div>
+    
+    <!--Hobby-->
+    
+    <div class="hobby">
+    <h1>Hobbies-</h1>
+    
+    <div class="pubg"><img  src="https://i.ibb.co/MS969hp/IMG-20200602-001039.jpg"> </div>  
+    
+    <div class="cod">
+    
+        <img  src="https://i.ibb.co/PW0cPRn/Screenshot-2020-04-05-00-38-47-241-com-sololearn.jpg">
+    </div> 
+    
+    <div class="sleep">
+    
+        <img  src="https://i.ibb.co/yNqjRfG/IMG-20200405-005542.jpg">
+    </div>
+    
+    <div class="tea">
+    
+        <img  src="https://i.ibb.co/7Kv4YgN/21b28471e1d0280fa4bad64ea9c0c29a.jpg">
+    </div>  
+    
+    <div class="learning">
+         Learning</br>new </br>skills.
+    </div>
+    
+    <div class="hb">
+      Reading </br>books.
+    </div>
+    </div>
+    
+    
+   
+   <!--Projects-->
+  
+  <h1 class="hy">Projects-</h1>
+  <h2><span class="pro">3D Cube-</span></h2>
+    <section class="cb">        
+        <article class="cube">
+        <div class="project one"></br>
+        <pre><img  src="https://i.ibb.co/sHK3yg7/13bceb594ac9faf0ecd37638c81ffea7.jpg"></pre></div>
+        <div class="project two"></br>
+        <pre><img src="https://i.ibb.co/Hth0sP2/4f6ecc0091be306bc51e4c0c554ee6e4.jpg"></pre></div>
+        <div class="project three"></br><pre><img src="https://i.ibb.co/sR5L3Pq/ea16c19f802128765a99d83634da789b.jpg"></pre></div>
+        <div class="project four"></br><pre><img src="https://i.ibb.co/tb27xcQ/f81926e22e7c522c9eb15eaebcf3eb3d.jpg"></pre></div>
+        <div class="project five"></br><pre><img src="https://i.ibb.co/0V1229D/2b9516c06a64d1ca017063199fe5903e.jpg"></pre></div>
+        <div class="project six"></br>      
+        <pre><img src="https://i.ibb.co/SXXfvk9/4528a829269d94a5e839f5706b9b9045.jpg"></pre></div>
+    </article>
+    </section>
+           
+      <h2><span class="pro">The Science of Deduction-</span></h2>  
+      <div class="tsod">
+          <img src="https://i.ibb.co/kJf0k7K/IMG-20200709-162737.jpg">         
+      </div>
+      
+      <h2><span class="pro">My Portfolio 1.0-</span></h2>
+      <div class="tsod">
+      <img src="https://i.ibb.co/CQWjXkT/IMG-20200709-163816.jpg">
+      </div>
+ 
+  </div>
+      
+   <div class="an">
+       
+   <span class="adn">A</span>
+   <span class="adn">D</span>
+   <span class="adn">N</span>
+   <span class="adn">A</span>
+   <span class="adn">N</span>
+       
+   </div>    
+
+ <!--Social media-->
+      
+      <div class="links">
+          <div class="ig"><span class="link"><a href="https://www.instagram.com/_adnan_ur_rehman/"><i class="fa fa-instagram"></i></a></span>
+          </div>
+          <div class="fb"><span class="link"><a href="https://www.facebook.com/adnan.urrehman.940"><i class="fa fa-facebook-official"></i></a></span>
+          </div>
+          <div class="pin"><span class="link"><a href="https://pin.it/vnvdzovi3joeoq"><i class="fa fa-pinterest"></i></a></span></div>
+          <div class="youtube"><span class="link"><a href="https://www.youtube.com/channel/UC6bw0s0pMwKHsdvIwd9NB0g"><i class="fa fa-youtube-square"></i></a></span></div>
+</div> 
+
+  <!--footer-->
+<footer><form>
+      <input type="text" placeholder=" Name" required >
+      <input type="email" placeholder=" Email" required >
+     <textarea placeholder="Any suggestion"></textarea>
+  </form> 
+   <button id="bio" type="submit">Submit</button>
+  </footer>     
+  
+  
+ <div class="ff"><div class="right" >Copyrighted by Adnan</div></div>  
+ 
+ 
+ <script>
+     function qrt(){
+  var sg=document.getElementById("nbar");
+ if(screen.width>500){    
+    sg.style.height="30px";
+ }else{
+     sg.style.width="90%"
+ }
+ }
+ setInterval(qrt,1000);
+ 
+
+
+function op(){ 
+    var nb=document.getElementById("nbar");
+    var men=document.getElementById("menu");
+
+    if(screen.width>500){
+      nb.style.width="90%" 
+      nb.style.boxShadow="1px 2px 3px rgba(0,255,225,0.6)" 
+      nb.style.borderRadius="0px 0px 10px 10px"
+      men.style.color="black"
+      men.style.backgroundColor="darkslategray"
+      men.style.boxShadow="2px 3px 3px rgba(0,255,225,0.8)";
+      men.style.borderLeftColor="black";
+    }else{       
+        nb.style.height="180px" 
+        nb.style.boxShadow="1px 2px 3px rgba(0,255,225,0.6)" 
+      nb.style.borderRadius="0px 0px 10px 10px"
+      men.style.color="black"
+      men.style.backgroundColor="darkslategray"
+      men.style.boxShadow="2px 3px 3px rgba(0,255,225,0.8)"
+      men.style.borderLeftColor="black"
+       
+    }
+}
+
+function cl(){
+   var bn=document.getElementById("nbar");
+   var nem=document.getElementById("menu");
+ 
+   if(screen.width>500){
+      bn.style.width="8%"
+      bn.style.boxShadow="1px 2px 3px rgba(0,0,0,0.8)" 
+      bn.style.borderRadius="0"
+      nem.style.color="white"
+      nem.style.backgroundColor="black"
+      nem.style.borderLeftColor="red"      
+      nem.style.boxShadow="1px 2px 3px rgba(0,0,0,0.8)"      
+   }else{
+       bn.style.height="30px"
+       bn.style.boxShadow="1px 2px 3px rgba(0,0,0,0.8)"
+       bn.style.borderRadius="0"
+       nem.style.color="white"
+       nem.style.backgroundColor="black"
+       nem.style.boxShadow="1px 2px 3px rgba(0,0,0,0.8)"
+       nem.style.borderLeftColor="red"
+   }
+}
+
+
+
+
+
+ </script>
+ </body>   
+</html>
